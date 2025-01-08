@@ -2,13 +2,11 @@
 - ## If we need to ignore a file from git track without caching or without adding it to gitignore then command =>
   git update-index --assume-unchange filename
 - ## If we need to delete some file from windows, like by some extension file type then run below command as windows.bat file =>
-  ```bash
+  ```bat
   @echo off
-setlocal enabledelayedexpansion
-
-set "directory=C:\Users\ankit\Documents\Dheme\Dheme\pic\test\pic-test"
-
-for %%F in ("%directory%\*") do (
+  setlocal enabledelayedexpansion
+  set "directory=C:\Users\ankit\Documents\Dheme\Dheme\pic\test\pic-test"
+  for %%F in ("%directory%\*") do (
     set "filename=%%~nxF"
     set "basename=%%~nF"
     set "extension=%%~xF"
@@ -23,7 +21,7 @@ for %%F in ("%directory%\*") do (
         del "%directory%\!filename!"
         echo Deleted: "%directory%\!filename!"
     )
-)
-echo Done.
-pause 
-```
+  )
+  echo Done.
+  pause 
+  ```
