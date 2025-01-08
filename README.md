@@ -1,5 +1,6 @@
 # Helpful-Commands
 - ## If we need to ignore a file from git track without caching or without adding it to gitignore then command =>
+  ```git
   git update-index --assume-unchange filename
 - ## If we need to delete some file from windows, like by some extension file type then run below command as windows.bat file =>
   ```bat
