@@ -26,3 +26,10 @@
   echo Done.
   pause 
   ```
+- ## For pushing project to firebase for hosting purpose
+  ```git bash
+  npm install -g firebase-tools
+  firebase login
+  firebase init
+  firebase deploy
+  ```
