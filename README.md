@@ -33,3 +33,7 @@
   firebase init
   firebase deploy
   ```
+- ## For iterating and changing file extension into different extension
+  ```git bash
+  for %f in (*.txt) do ren "%f" "%~nf.md"
+  ```
