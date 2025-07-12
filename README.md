@@ -37,3 +37,11 @@
   ```git bash
   for %f in (*.txt) do ren "%f" "%~nf.md"
   ```
+- ## For testing different error codes, url below mention URL for testing
+  - https://httpstat.us/500
+  - https://httpstat.us/200 - Success
+  - https://httpstat.us/404 - Not Found
+  - https://httpstat.us/401 - Unauthorized
+  - https://httpstat.us/403 - Forbidden
+  - https://httpstat.us/503 - Service Unavailable
+  - URL Pattern: https://httpstat.us/{status_code}
